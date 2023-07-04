@@ -1,0 +1,49 @@
+.NavigationMenu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NavigationMenu li{
+    margin: 0px 20px;
+
+}
+.NavigationMenu li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* mobile view   */
+.Navigationmobile{
+    list-style: none;
+}
+.Navigationmobile li{
+   margin-top: 20px;
+
+}
+.Navigationmobile li a{
+    text-decoration: none;
+    font-size:1.4rem;
+    color: rgb(18, 27, 88);
+    font-weight: bolder;
+}
+.active{
+    color: goldenrod !important;
+    font-weight: bold !important;
+
+}
+.btn{
+    
+    margin: 20px;
+    width: 90px;
+    height: 30px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(208, 38, 38);
+    padding: 2px 0px;
+}
+.btn:hover{
+    color: goldenrod;
+    transition: ease-in-out;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.card1{
+
+   
+}
+.team {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    padding: 10px;
+    margin-left: 150px;
+    background-color: rgb(21, 26, 38);
+  }
+  body{
+    background-color:  rgb(21, 26, 38);
+  }
+  .cont{
+    color: azure;
+  }
+  img{
+    width:200px;
+    height:250px;
+  }

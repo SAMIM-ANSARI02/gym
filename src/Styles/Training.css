@@ -1,0 +1,44 @@
+body{
+    background-color: rgba(103, 165, 37, 0.849);
+    
+
+}
+.main_1{
+    width:50%;
+    
+    margin-left: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.card{
+    border: 5px solid white;
+    background: rgb(32, 190, 193);
+    border-radius: 2px;
+    overflow: hidden;
+   
+
+
+}
+.topcard img{
+    width:100%;
+   /* object-fit:cover; */
+   height: 300px;
+
+
+
+}
+.slick-slider {
+    margin:0 -15px;
+}
+.slick-slide > div{
+   margin: 0 50;
+}
+.topcard{
+    /* border: 5px solid red; */
+    height:300px;
+}
+
+.bottomcard{
+    text-align: center;
+}
+

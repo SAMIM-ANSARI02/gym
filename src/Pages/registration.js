@@ -15,12 +15,6 @@ const Registration = () => {
     }
   return (
     <>
-    {loader ? <ClipLoader
-  color="#3697d6"
-  height={20}
-  radius={4}
-  width={4}
-/>:}
     <div style={{
         textAlign:'center',
         color:'white',

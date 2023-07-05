@@ -1,9 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { useState,useEffect } from 'react'
-import { useState, CSSProperties } from "react";
-
-
+import ClipLoader from "react-spinners/ClipLoader";
 const About = () => {
   const[loader,setloader]=useState(false)
     
@@ -14,6 +12,8 @@ const About = () => {
         },5000);
     },[])
   return (
+  
+   
     
     <Layout >
       <div className='main' style={{backgroundColor:'grey'}}>

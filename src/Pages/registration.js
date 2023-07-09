@@ -1,7 +1,9 @@
 import '../Pages/Registration.css'
-import { Link } from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import {useFormik} from 'formik'
+import back1 from '../images/back1.jpg'
 import { SignUpschema } from './schemas'
+
 
  
 const initialValues={
@@ -23,19 +25,29 @@ const Registration = () => {
          action.resetForm()
       }
     })
-    
+    let navigate=useNavigate()
    
     
 
     const handleclick=()=>{
-        alert("registration successful")
+      if((values.username && values.age && values.phone && values.email)===''){
+        alert('complete the form')
+      }else{
+       
+        alert("ok")
+        
+      
         localStorage.setItem("name:",values.username)
         localStorage.setItem("email:",values.email)
         localStorage.setItem("phone:",values.phone)
         localStorage.setItem("phone:",values.age)
+        navigate('/')
+      }
+        
      }
   return (
     <>
+   
     <div style={{
         textAlign:'center',
         color:'white',
@@ -46,7 +58,7 @@ const Registration = () => {
       <form action="" onSubmit={handleSubmit} style={
         {
             width:'30%',
-            
+            // backgroundImage:URL(""),
             backgroundColor:'orange',
             borderRadius:'10px',
             margin:'auto',
@@ -118,7 +130,7 @@ const Registration = () => {
         </div>
     
         <div style={{display:'flex', justifyContent:'center',marginTop:'15px',paddingBottom:'10px'}} >
-          <Link to='/'><button onClick={handleclick}  style={{backgroundColor:'green', color:'white' }}>Done</button> </Link>
+        <button onClick={handleclick}  style={{backgroundColor:'green', color:'white' }}>Done</button>  
         </div>
         
 

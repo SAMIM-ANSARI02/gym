@@ -4,6 +4,7 @@ import { AppBar, Box, Typography,Toolbar, IconButton ,Drawer, Divider}  from '@m
 import {Link,NavLink} from 'react-router-dom';
 import '../Styles/Headerstyle.css'
 import MenuIcon from '@mui/icons-material/Menu';
+import Time from '../Pages/Time';
 
 
 
@@ -28,6 +29,7 @@ const Header = () => {
                     <Divider/>
                     
                       <ul className='Navigationmobile'>
+                       
                          <li><NavLink to={'/'}>Home</NavLink></li>
                          <li><NavLink to={'/About'}>About</NavLink></li>
                          {/* <li><NavLink to={'/Program'}>Program</NavLink></li> */}
@@ -59,6 +61,7 @@ const Header = () => {
                     <Box sx={{display:{xs:'none',sm:'block'}}}>
                       
                       <ul className='NavigationMenu'>
+                      
                       <li><NavLink to={'/'}>Home</NavLink></li>
                          <li><NavLink to={'/About'}>About</NavLink></li>
                          {/* <li><NavLink to={'/Program'}>Program</NavLink></li> */}

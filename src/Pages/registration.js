@@ -34,7 +34,7 @@ const Registration = () => {
         alert('complete the form')
       }else{
        
-        alert("ok")
+        alert("registrtion succesful")
         
       
         localStorage.setItem("name:",values.username)

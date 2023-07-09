@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import back4 from '../images/back4.jpg'
 import '../Styles/Home.css'
 import Mymodal from './Showmodal'
+import Time from '../Pages/Time';
 
 const Home = () => {
 
@@ -15,7 +16,8 @@ const Closemodal=()=>setshowmodal(false);
       <div className='home' style={{backgroundImage:`url(${back4})`}} >
            <div className='container'>
            <h1>Your Fitness Our Priority </h1> 
-           <p>Health is Wealth</p>
+           <Time/>
+           <p style={{color:'rgb(130, 10, 10)',fontWeight:'bolder'}}>Health is Wealth</p>
             <button onClick={()=>setshowmodal(true)}>join now</button>
             {showmodal && <Mymodal Closemodal={Closemodal} /> }
            

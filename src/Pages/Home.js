@@ -17,7 +17,7 @@ const Closemodal=()=>setshowmodal(false);
            <div className='container'>
            <h1>Your Fitness Our Priority </h1> 
            <Time/>
-           <p style={{color:'rgb(130, 10, 10)',fontWeight:'bolder'}}>Health is Wealth</p>
+           <p style={{color:'white',fontWeight:'bolder'}}>Health is Wealth</p>
             <button onClick={()=>setshowmodal(true)}>join now</button>
             {showmodal && <Mymodal Closemodal={Closemodal} /> }
            
